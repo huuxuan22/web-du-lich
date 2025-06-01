@@ -34,8 +34,6 @@ import Footer from "./Footer";
 
 const primaryColor = "#008b76";
 
-
-
 const StyledImageList = styled(ImageList)(({ theme }) => ({
   gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr)) !important",
 }));
@@ -56,14 +54,10 @@ const ServiceGridMUI = () => {
   const [location, setLocation] = useState("");
   const [serviceType, setServiceType] = useState("");
   const [ratingFilter, setRatingFilter] = useState([0, 5]);
-  const [availableServiceTypes, setAvailableServiceTypes] = useState([
-    "Nhà hàng",
-    "Khách sạn",
-    "Ẩm thực",
-  ]);
+  
 
   // ... (giữ nguyên mảng allServices như bạn đã cung cấp)
-  
+
   const allServices = [
     // KHÁCH SẠN
     {
@@ -73,8 +67,7 @@ const ServiceGridMUI = () => {
       rating: 5,
       price: "15.000.000",
       location: "Đà Nẵng",
-      image:
-        "https://cdn.guland.vn/files/1633323013615a880541421.jpg",
+      image: "https://cdn.guland.vn/files/1633323013615a880541421.jpg",
     },
     {
       id: 2,
@@ -671,7 +664,7 @@ const ServiceGridMUI = () => {
             <Typography variant="h6">Bộ lọc</Typography>
           </Box>
           <Divider sx={{ mb: 2 }} />
-          
+
           <Box
             sx={{
               display: "flex",
@@ -690,7 +683,7 @@ const ServiceGridMUI = () => {
               size="small"
               sx={{ flexGrow: 1, maxWidth: 300 }}
             />
-            
+
             <FormControl
               fullWidth
               margin="normal"
@@ -706,7 +699,7 @@ const ServiceGridMUI = () => {
                 onChange={handleServiceTypeChange}
               >
                 <MenuItem value="">Tất cả loại dịch vụ</MenuItem>
-                {availableServiceTypes.map((type) => (
+                {["Nhà hàng", "Khách sạn", "Ẩm thực"].map((type) => (
                   <MenuItem key={type} value={type}>
                     {type}
                   </MenuItem>
@@ -714,7 +707,7 @@ const ServiceGridMUI = () => {
               </Select>
             </FormControl>
           </Box>
-          
+
           <Box sx={{ mt: 3 }}>
             <Typography gutterBottom sx={{ mb: 1 }}>
               Lọc theo đánh giá: {ratingFilter[0]} - {ratingFilter[1]} sao
@@ -766,7 +759,11 @@ const ServiceGridMUI = () => {
                     subtitle={
                       <Box sx={{ display: "flex", alignItems: "center" }}>
                         {getServiceIcon(service.type)}
-                        <Typography variant="caption" color="white" sx={{ ml: 0.5 }}>
+                        <Typography
+                          variant="caption"
+                          color="white"
+                          sx={{ ml: 0.5 }}
+                        >
                           {service.type} - {service.location}
                         </Typography>
                       </Box>
@@ -898,6 +895,3 @@ const ServiceGridMUI = () => {
 };
 
 export default ServiceGridMUI;
-
-
-
