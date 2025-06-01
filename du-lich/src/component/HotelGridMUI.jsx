@@ -43,7 +43,6 @@ const HotelGridMUI = () => {
     { id: 7, name: 'Six Senses Ninh Van Bay', rating: 5, price: '18.000.000', location: 'Nha Trang', image: 'https://i.ytimg.com/vi/Rl6x26dFTE4/maxresdefault.jpg' },
     { id: 8, name: 'Park Hyatt Saigon', rating: 5, price: '13.500.000', location: 'TP.HCM', image: 'https://th.bing.com/th/id/OIP.8nox8yr5Lwy2XWa2dresCAHaEK?w=634&h=356&rs=1&pid=ImgDetMain' }
   ];
-  const paginatedHotels = hotels.slice((page - 1) * itemsPerPage, page * itemsPerPage);
 
   return (
     <Box sx={{ 

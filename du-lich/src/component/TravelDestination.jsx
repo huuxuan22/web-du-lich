@@ -750,7 +750,7 @@ const TravelDestination = () => {
       ],
     },
     // ... other provinces data (similar structure)
-  ])
+  ],[])
   useEffect(() => {
     if (searchTerm) {
       const filtered = provinces

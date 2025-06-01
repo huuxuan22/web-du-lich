@@ -2,7 +2,6 @@ import {
   Box,
   Button,
   Typography,
-  Paper,
   Rating,
   Chip,
   useTheme,
@@ -57,7 +56,6 @@ const ServiceGridMUI = () => {
   const [location, setLocation] = useState("");
   const [serviceType, setServiceType] = useState("");
   const [ratingFilter, setRatingFilter] = useState([0, 5]);
-  const [availableLocations, setAvailableLocations] = useState([]);
   const [availableServiceTypes, setAvailableServiceTypes] = useState([
     "Nhà hàng",
     "Khách sạn",

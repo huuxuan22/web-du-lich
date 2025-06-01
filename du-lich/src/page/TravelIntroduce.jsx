@@ -75,9 +75,7 @@ const TravelIntroduce = () => {
     setValue(newValue);
   };
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
+
 
   // Dữ liệu các dịch vụ
   const services = [
