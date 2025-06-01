@@ -54,7 +54,12 @@ const ServiceGridMUI = () => {
   const [location, setLocation] = useState("");
   const [serviceType, setServiceType] = useState("");
   const [ratingFilter, setRatingFilter] = useState([0, 5]);
-  
+  const [availableLocations, setAvailableLocations] = useState([]);
+  const [availableServiceTypes, setAvailableServiceTypes] = useState([
+    "Nhà hàng",
+    "Khách sạn",
+    "Ẩm thực",
+  ]);
 
   // ... (giữ nguyên mảng allServices như bạn đã cung cấp)
 
@@ -599,6 +604,11 @@ const ServiceGridMUI = () => {
     }
   };
 
+  useEffect(() => {
+    console.log(availableLocations?.length);
+    setAvailableServiceTypes(["Nhà hàng", "Khách sạn", "Ẩm thực"]);
+  }, []);
+
   return (
     <div>
       <Header></Header>
@@ -699,7 +709,7 @@ const ServiceGridMUI = () => {
                 onChange={handleServiceTypeChange}
               >
                 <MenuItem value="">Tất cả loại dịch vụ</MenuItem>
-                {["Nhà hàng", "Khách sạn", "Ẩm thực"].map((type) => (
+                {availableServiceTypes.map((type) => (
                   <MenuItem key={type} value={type}>
                     {type}
                   </MenuItem>
