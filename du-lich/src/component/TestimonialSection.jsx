@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { Box, Container, Typography, Avatar, Card, CardContent, Button, Stack } from '@mui/material';
 import { Star, StarBorder, ArrowBack, ArrowForward } from '@mui/icons-material';
 import AOS from 'aos';

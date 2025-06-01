@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Container,
   Box,
   Typography,
   TextField,
@@ -16,8 +15,6 @@ import {
   Lock,
   Visibility,
   VisibilityOff,
-  Google,
-  Facebook,
   Person
 } from '@mui/icons-material';
 import { styled } from '@mui/material/styles';

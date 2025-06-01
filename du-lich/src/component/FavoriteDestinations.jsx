@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Typography, Paper, Grid, Chip, Rating, Button, useMediaQuery, useTheme } from '@mui/material';
 import { styled, keyframes } from '@mui/material/styles';
 

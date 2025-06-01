@@ -21,7 +21,6 @@ import {
   Divider,
 } from "@mui/material";
 import {
-  LocationOn,
   Hotel,
   Star,
   Restaurant,
@@ -36,19 +35,7 @@ import Footer from "./Footer";
 
 const primaryColor = "#008b76";
 
-const ServiceCard = styled(Paper)(({ theme }) => ({
-  position: "relative",
-  overflow: "hidden",
-  borderRadius: theme.shape.borderRadius,
-  transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-  "&:hover": {
-    transform: "translateY(-5px)",
-    boxShadow: theme.shadows[6],
-    "& .service-image": {
-      transform: "scale(1.05)",
-    },
-  },
-}));
+
 
 const StyledImageList = styled(ImageList)(({ theme }) => ({
   gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr)) !important",

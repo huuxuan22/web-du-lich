@@ -10,14 +10,11 @@ import {
   Grid,
 } from '@mui/material';
 import {
-  CalendarMonth,
   Person,
   Favorite,
-  Share,
   Comment,
   LocationOn,
   AccessTime,
-  EmojiEmotions,
   ArrowForward,
 } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';

@@ -10,7 +10,7 @@ import {
   styled,
   Pagination
 } from '@mui/material';
-import { LocationOn, Hotel, Star } from '@mui/icons-material';
+import { LocationOn, Star } from '@mui/icons-material';
 import { useState } from 'react';
 
 const HotelCard = styled(Paper)(({ theme }) => ({

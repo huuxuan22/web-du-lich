@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import {
   Container,
   Select,
@@ -19,7 +19,6 @@ import {
   Rating,
   Paper,
   IconButton,
-  Pagination,
   Tabs,
   Tab,
   Dialog,
@@ -39,15 +38,11 @@ import {
   FavoriteBorder,
   Share,
   Directions,
-  AttachMoney,
-  Star,
   Close,
 } from "@mui/icons-material";
 import Header from "../page/Header";
 import Footer from "../page/Footer";
-import { useNavigate } from "react-router-dom";
 import PlaceDetail from "../page/PlaceDetail";
-import Autocomplete from "@mui/material/Autocomplete";
 // Styled components
 const SearchContainer = styled(Paper)(({ theme }) => ({
   padding: "16px 24px",

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import { Box, Typography, useTheme } from '@mui/material';
 import { styled } from '@mui/system';
 import AOS from 'aos';

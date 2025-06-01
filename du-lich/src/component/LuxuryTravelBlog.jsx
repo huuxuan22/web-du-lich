@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Box,
   Container,
@@ -10,9 +9,6 @@ import {
   CardActionArea,
   Chip,
   Button,
-  Divider,
-  useTheme,
-  useMediaQuery
 } from '@mui/material';
 import { ChevronRight, CalendarToday, Place, Star } from '@mui/icons-material';
 
@@ -54,8 +50,6 @@ const luxuryBlogPosts = [
 ];
 
 const LuxuryTravelBlog = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const featuredPost = luxuryBlogPosts.find(post => post.featured);
   const secondaryPosts = luxuryBlogPosts.filter(post => !post.featured);
 

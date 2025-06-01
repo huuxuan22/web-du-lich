@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import  { useState, useRef } from "react";
 import {
   Avatar,
   Button,
@@ -11,7 +11,7 @@ import {
   Pagination,
   Chip,
 } from "@mui/material";
-import { Send, Reply, ExpandMore, AttachFile } from "@mui/icons-material";
+import { Send, Reply, AttachFile } from "@mui/icons-material";
 import Header from "../page/Header";
 import Footer from "../page/Footer";
 
