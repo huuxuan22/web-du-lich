@@ -1,4 +1,4 @@
-import  { useState, useEffect } from "react";
+import  { useState, useEffect, useMemo } from "react";
 import {
   Container,
   Select,
@@ -141,7 +141,7 @@ const TravelDestination = () => {
   ];
 
   // Dữ liệu mở rộng với nhiều tỉnh thành và địa điểm
-  const provinces = [
+  const provinces = useMemo(() => [
     {
       name: "Quảng Nam",
       places: [
@@ -750,7 +750,7 @@ const TravelDestination = () => {
       ],
     },
     // ... other provinces data (similar structure)
-  ];
+  ])
   useEffect(() => {
     if (searchTerm) {
       const filtered = provinces
